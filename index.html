@@ -483,9 +483,9 @@ function applyTasa(rate, isCache = false) {
    ODOO · CAPA JSON-RPC
    ═══════════════════════════════════════════════════════════════ */
 async function odooFetch(path, params) {
-  const res = await fetch('https://gonder-proxy.grupogonder.workers.dev' + path, {
+  const res = await fetch('https://gentle-wildflower-a72f.grupogonder-160.workers.dev' + path, {
     method:      'POST',
-    headers:     { 'Content-Type': 'application/json' },
+    headers:     { 'Content-Type': 'application/json', 'X-Api-Key': 'vJvv2p2Uz-4PmixpU-s6zDJ3lRdLLzJwODFChwdCF-g' },
     body:        JSON.stringify({ jsonrpc:'2.0', method:'call', id: Date.now(), params }),
     signal:      makeSignal(14000),
   });
